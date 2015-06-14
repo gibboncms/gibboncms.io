@@ -11,7 +11,5 @@ $app->get('/blog/{post}', function ($title) {
 
 $app->get('/{page:.*}', function ($title) {
     $page = liana('pages')->find($title) ?: abort(404);
-
-    $view = app()->request->segment(1) === 'docs' ? 'docs' : 'page';
-    return view($view)->with(['page' => $page]);
+    return view('page')->with(['page' => $page]);
 });

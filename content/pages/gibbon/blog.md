@@ -8,6 +8,10 @@ data:
 
 # Blog
 
+```bash
+$ composer require gibboncms/blog
+```
+
 The blog module allows you to create posts. The publication date is in the filename so your posts are correctly sorted in your filesystem. Posts require a title, and have an optional data field.
 
 ```markdown

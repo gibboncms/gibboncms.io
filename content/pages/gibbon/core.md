@@ -8,6 +8,10 @@ data:
 
 # Core
 
+```bash
+$ composer require gibboncms/core
+```
+
 Gibbon's core doesn't provide any standalone functionality, but exists as a solid foundation for modules. Below a quick rundown of the core's api.
 
 ## Repositories

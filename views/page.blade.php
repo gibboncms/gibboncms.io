@@ -1,4 +1,4 @@
-@extends('layouts.'.(app('request')->segment(1) === 'docs' ? 'docs' : 'master'))
+@extends('layouts.master')
 
 @section('title', $page->title)
 

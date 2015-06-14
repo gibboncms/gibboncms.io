@@ -8,6 +8,10 @@ data:
 
 # Pages
 
+```bash
+$ composer require gibboncms/pages
+```
+
 The pages module allows you to create unique pages for your website. Pages require a title and markdown body. An optional data field is also parsed for extra metadata (e.g. the side navigation to the left is generated based on this kind of data).
 
 ```markdown

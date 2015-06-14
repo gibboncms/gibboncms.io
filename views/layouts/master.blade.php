@@ -16,7 +16,19 @@
     <header class="header">
         <h1><a href="{{ url() }}"><span class="gibbon">Gibbon</span><span class="cms">Cms</span></a></h1>
     </header>
-    @yield('content')
+    <div class="container">
+        <div class="row">
+            <div class="col-tn-6 col-md-4">
+                @include('layouts._partials.navigation')
+            </div>
+            <div class="col-tn-18 col-md-20">
+                <section class="page">
+                    @yield('content')
+                </section>
+            </div>
+        </div>
+    </div>
+    
     <footer class="footer">
         <p>
             &copy; 2015 <a href="http://sebastiandedeyne.com" target="_blank">Sebastian De Deyne</a> x <a href="http://arteveldehogeschool.be" target="_blank">Arteveldehogeschool</a>

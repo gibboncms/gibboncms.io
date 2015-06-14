@@ -8,6 +8,10 @@ data:
 
 # Blocks
 
+```bash
+$ composer require gibboncms/blocks
+```
+
 Blocks have a similar structure to pages, but don't have a title. They do have class and id fields to easily edit a blocks' style on your site. Blocks are ideal for elements on your homepage or in your layout.
 
 ```markdown

@@ -8,6 +8,10 @@ data:
 
 # Config
 
+```bash
+$ composer require gibboncms/config
+```
+
 The config module reads key-value pairs from yaml files. Config is special since it doen't return entities but primitive data. The module also supports dot notation for easy retrieval.
 
 ```yaml
