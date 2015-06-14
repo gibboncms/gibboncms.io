@@ -1,0 +1,27 @@
+#!/usr/bin/env php
+<?php
+
+use Symfony\Component\Console\Input\ArgvInput;
+use Symfony\Component\Console\Output\ConsoleOutput;
+
+/* Instantiate the application
+---------------------------------------------------------*/
+$app = require __DIR__.'/bootstrap/app.php';
+
+
+/* Register the console kernel
+---------------------------------------------------------*/
+$app->instance(
+    'Illuminate\Contracts\Console\Kernel',
+    new GibbonCms\Liana\Console\Kernel($app)
+);
+
+
+/* Get the console kernel
+---------------------------------------------------------*/
+$kernel = $app->make('Illuminate\Contracts\Console\Kernel');
+
+
+/* That's it!
+---------------------------------------------------------*/
+exit($kernel->handle(new ArgvInput, new ConsoleOutput));

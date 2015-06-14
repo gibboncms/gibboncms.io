@@ -1,0 +1,29 @@
+{
+    "name": "gibboncms/liana",
+    "description": "Liana framework for Gibbon",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sebastian De Deyne",
+            "email": "sebastiandedeyne@gmail.com"
+        }
+    ],
+    "require": {
+        "gibboncms/liana-core": "~0.1",
+        "vlucas/phpdotenv": "^1.1",
+        "spatie/string": "^1.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "GibbonCms\\GibbonCmsIO\\": "src"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "cp -n .env.example .env 2>/dev/null || :"
+        ],
+        "post-create-project-cmd": [
+            "cp -n .env.example .env 2>/dev/null || :"
+        ]
+    }
+}
