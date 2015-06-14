@@ -1,0 +1,20 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  line-height: 22px;
+  color: $black;
+  @include source-sans;
+}
+
+::selection {
+  background: rgba($zinfandel, .3);
+}
+
+::-moz-selection {
+  background: rgba($zinfandel, .3);
+}

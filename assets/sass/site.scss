@@ -1,3 +1,25 @@
-body {
-  font-family: sans-serif;
-}
+// Tinybootstrap
+@import 'settings.tinybootstrap';
+@import 'tinybootstrap/tinybootstrap';
+
+// Settings
+@import 'settings.colors';
+
+// Tools
+@import 'tools.typography';
+
+// Generic
+@import 'generic.reset';
+
+// Base
+@import 'base.document';
+@import 'base.paragraphs';
+@import 'base.links';
+@import 'base.lists';
+@import 'base.code';
+
+// Components
+@import 'components.header';
+@import 'components.footer';
+@import 'components.navigation';
+@import 'components.docs';

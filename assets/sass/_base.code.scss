@@ -1,0 +1,18 @@
+code {
+  background-color: #f8f8f8;
+  border-radius: 2px;
+  @include source-code;
+
+  pre & {
+    display: block;
+    padding: 10px 10px 12px !important;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+pre {
+  margin: 0 0 22px 0;
+}

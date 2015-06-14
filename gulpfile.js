@@ -9,7 +9,7 @@ elixir.config.sourcemaps = false;
 
 elixir(function(mix) {
     mix
-        .sass('site.scss')
+        .sass('site.scss', 'public/css', { includePaths: [ elixir.config.bowerDir + '/tinybootstrap' ]})
         .scripts(null, 'public/js/site.js')
         .version(['css/site.css', 'js/site.js']);
     ;

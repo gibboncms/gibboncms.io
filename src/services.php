@@ -2,4 +2,4 @@
 
 namespace GibbonCms\GibbonCmsIO;
 
-$app->singleton(Navigation::class, Navigation::class);
+$app->singleton('navigation', Navigation::class);

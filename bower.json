@@ -1,0 +1,6 @@
+{
+  "name": "gibboncms.io",
+  "dependencies": {
+    "tinybootstrap": "sebastiandedeyne/tinybootstrap"
+  }
+}
