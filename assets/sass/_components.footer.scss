@@ -2,6 +2,11 @@
   color: $gray;
   font-size: 12px;
   text-align: center;
-  margin-top: 44px;
-  padding: 10px 11px;
+
+  p {
+    display: inline-block;
+    border-top: 1px solid $gray-light;
+    margin-top: 22px;
+    padding: 32px 33px;
+  }
 }

@@ -8,4 +8,21 @@ data:
 
 # Blog
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sed ut labore consectetur, maxime dolores, fugit ex, necessitatibus explicabo eos totam, adipisci! Quibusdam deleniti itaque, obcaecati quod libero accusantium id.
+The blog module allows you to create posts. The publication date is in the filename so your posts are correctly sorted in your filesystem. Posts require a title, and have an optional data field.
+
+```markdown
+# 2015-05-27-my-first-post.md
+title: My First Post
+data:
+  author: Sebastian De Deyne
+
+---
+
+## Hello world
+
+This is my first post in Gibbon!
+```
+
+```php
+$blogRepository->find('my-first-post');
+```

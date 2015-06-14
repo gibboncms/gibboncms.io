@@ -8,6 +8,11 @@
   font-weight: bold;
 }
 
+@mixin source-sans-italic {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: italic;
+}
+
 @mixin ubuntu-light {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;

@@ -12,9 +12,11 @@ body {
 }
 
 ::selection {
-  background: rgba($zinfandel, .3);
+  color: $white;
+  background-color: $zinfandel;
 }
 
 ::-moz-selection {
-  background: rgba($zinfandel, .3);
+  color: $white;
+  background-color: $zinfandel;
 }

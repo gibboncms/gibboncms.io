@@ -8,10 +8,20 @@ data:
 
 # Blocks
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sed ut labore consectetur, `maxime dolores`, fugit ex, necessitatibus explicabo eos totam, adipisci! Quibusdam deleniti itaque, obcaecati quod libero accusantium id.
+Blocks have a similar structure to pages, but don't have a title. They do have class and id fields to easily edit a blocks' style on your site. Blocks are ideal for elements on your homepage or in your layout.
 
-```php
-echo 'Hello world!';
+```markdown
+# dummy.md
+class: block
+id: block-hello-world
+
+---
+
+## Hello world
+
+I'm a dummy block
 ```
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sed ut labore consectetur, `maxime dolores`, fugit ex, necessitatibus explicabo eos totam, adipisci! Quibusdam deleniti itaque, obcaecati quod libero accusantium id.
+```php
+$blockRepository->find('dummy');
+```

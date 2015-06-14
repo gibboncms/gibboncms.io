@@ -5,4 +5,32 @@
     font-size: 24px;
     @include ubuntu-bold;
   }
+
+  h2 {
+    text-transform: uppercase;
+    margin: 0 0 22px 0;
+    @include source-sans-bold;
+  }
+
+  em {
+    @include source-sans-italic;
+  }
+
+  strong {
+    @include source-sans-bold;
+  }
+
+  ul,
+  ol {
+    margin: 0 0 22px 0;
+    list-style-position: inside;
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
 }

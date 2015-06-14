@@ -1,5 +1,7 @@
 @extends('layouts.master')
 
+@section('title', $page->title)
+
 @section('content')
     <div class="container">
         <div class="row">

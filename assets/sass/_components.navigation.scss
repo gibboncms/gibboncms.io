@@ -1,5 +1,8 @@
 .navigation {
-  padding-top: 44px;
+  margin-bottom: 44px;
+  @include breakpoint(tn) {
+    padding-top: 44px;
+  }
 
   a {
     text-decoration: none;

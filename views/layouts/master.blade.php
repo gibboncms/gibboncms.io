@@ -4,7 +4,7 @@
     <title>@yield('title', liana('settings')->get('site.name'))</title>
     
     <link rel="stylesheet" href="{{ elixir('css/site.css') }}">
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Ubuntu:300,700|Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700|Ubuntu:300,700|Source+Code+Pro' rel='stylesheet' type='text/css'>
 
     <script src="{{ elixir('js/site.js') }}"></script>
 
@@ -18,7 +18,9 @@
     </header>
     @yield('content')
     <footer class="footer">
-        &copy; 2015 <a href="http://sebastiandedeyne.com" target="_blank">Sebastian De Deyne</a> x <a href="http://arteveldehogeschool.be" target="_blank">Arteveldehogeschool</a>
+        <p>
+            &copy; 2015 <a href="http://sebastiandedeyne.com" target="_blank">Sebastian De Deyne</a> x <a href="http://arteveldehogeschool.be" target="_blank">Arteveldehogeschool</a>
+        </p>
     </footer>
 </body>
 </html>

@@ -8,4 +8,16 @@ data:
 
 # Config
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sed ut labore consectetur, maxime dolores, fugit ex, necessitatibus explicabo eos totam, adipisci! Quibusdam deleniti itaque, obcaecati quod libero accusantium id.
+The config module reads key-value pairs from yaml files. Config is special since it doen't return entities but primitive data. The module also supports dot notation for easy retrieval.
+
+```yaml
+# site.yml
+name: GibbonCms
+contact:
+  email: sebastian@gibboncms.io
+```
+
+```php
+$name = $configRepository->get->('site.name');
+$email = $configRepository->get->('site.contact.email');
+```
